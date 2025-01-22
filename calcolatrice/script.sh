@@ -8,8 +8,8 @@ function wait_and_continue() {
 
 function somma() {
     read -p "Quanti valori vuoi sommare? " n
-    if ! is_integer "$n" || ((n < 1)); then
-        echo "Errore: devi inserire un numero intero maggiore di zero."
+    if ! is_integer "$n"; then
+        echo "Errore: devi inserire un numero intero. Riprova."
         wait_and_continue
         return
     fi
@@ -38,8 +38,8 @@ function somma() {
 
 function sottrazione() {
     read -p "Quanti valori vuoi sottrarre? " n
-    if ! is_integer "$n" || ((n < 1)); then
-        echo "Errore: devi inserire un numero intero positivo maggiore di zero."
+    if ! is_integer "$n"; then
+        echo "Errore: devi inserire un numero intero. Riprova."
         wait_and_continue
         return
     fi
@@ -47,7 +47,7 @@ function sottrazione() {
     local sottrazione
     read -p "Inserisci il primo valore: " sottrazione
     if ! is_integer "$sottrazione"; then
-        echo "Errore: devi inserire un numero intero."
+        echo "Errore: devi inserire un numero intero. Riprova."
         wait_and_continue
         return
     fi
@@ -68,8 +68,8 @@ function sottrazione() {
 
 function moltiplicazione() {
     read -p "Quanti valori vuoi moltiplicare? " n
-    if ! is_integer "$n" || ((n < 1)); then
-        echo "Errore: devi inserire un numero intero positivo maggiore di zero."
+    if ! is_integer "$n"; then
+        echo "Errore: devi inserire un numero intero. Riprova."
         wait_and_continue
         return
     fi
@@ -93,7 +93,7 @@ function moltiplicazione() {
 function divisione() {
     read -p "Inserisci il primo valore: " num1
     if ! is_integer "$num1"; then
-        echo "Errore: devi inserire un numero intero."
+        echo "Errore: devi inserire un numero intero. Riprova."
         wait_and_continue
         return
     fi
