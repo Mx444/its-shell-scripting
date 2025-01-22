@@ -14,8 +14,15 @@ function somma() {
         return
     fi
 
-    local somma=0
-    for ((i = 1; i <= n; i++)); do
+    local somma
+    read -p "Inserisci il primo valore : " somma
+    if ! is_integer "$somma"; then
+        echo "Errore: devi inserire un numero intero. Riprova."
+        wait_and_continue
+        return
+    fi
+
+    for ((i = 2; i <= n; i++)); do
         read -p "Inserisci il valore $i: " val
         if is_integer "$val"; then
             somma=$((somma + val))
@@ -119,11 +126,11 @@ while true; do
     read -p "Scegli un'opzione: " scelta
 
     case $scelta in
-        1) somma ;;
-        2) sottrazione ;;
-        3) moltiplicazione ;;
-        4) divisione ;;
-        5) esci ;;
-        *) echo "Opzione non valida. Riprova." && wait_and_continue ;;
+    1) somma ;;
+    2) sottrazione ;;
+    3) moltiplicazione ;;
+    4) divisione ;;
+    5) esci ;;
+    *) echo "Opzione non valida. Riprova." && wait_and_continue ;;
     esac
 done
