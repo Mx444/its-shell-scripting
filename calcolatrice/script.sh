@@ -74,8 +74,9 @@ function moltiplicazione() {
         return
     fi
 
-    local moltiplicazione=1
-    for ((i = 1; i <= n; i++)); do
+    local moltiplicazione
+    read -p "Inserisci il primo valore: " moltiplicazione
+    for ((i = 2; i <= n; i++)); do
         read -p "Inserisci il valore $i: " val
         if is_integer "$val"; then
             moltiplicazione=$((moltiplicazione * val))
