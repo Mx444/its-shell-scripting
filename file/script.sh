@@ -1,12 +1,3 @@
-# Inserisci percorso del file
-# il file esiste ? No - uscita programma . Si ? inserisci i permessi utente owner
-#Permesso valido ? No - uscita programma . Si ? inserisci i permessi gruppo
-#Permesso valido ? No - uscita programma . Si ? inserisci i permessi altri
-#Permesso valido ? No - uscita programma . Si ? combina i permessi e visualizza il risultato
-#applicare i permessi al file
-#i permessi sono stati applicati correttamente
-#fine programma
-
 echo "Inserisci percorso del file"
 read file
 
