@@ -2,7 +2,7 @@
 # L'opzione -f verifica se il file esiste e se è un file regolare
 if [ ! -f archivio_libri.txt ]; then
     # Se il file non esiste, viene creato un nuovo file vuoto con il comando touch
-    touch archivio_libri.txt
+    touch book_archive.txt
 fi
 
 # Array archivio

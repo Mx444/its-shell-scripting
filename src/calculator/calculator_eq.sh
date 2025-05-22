@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Funzione per il menu principale
 function menu_principale() {
   echo "Benvenuto nella calcolatrice avanzata!"
   echo "Scegli un'opzione:"
@@ -10,7 +9,6 @@ function menu_principale() {
   read -p "Inserisci la tua scelta (1-3): " scelta
 }
 
-# Funzione per operazioni base
 function operazioni_base() {
   echo "Hai scelto: Operazioni base"
   echo "Inserisci il primo numero:"
@@ -20,7 +18,6 @@ function operazioni_base() {
   echo "Scegli l'operazione (+, -, *, /):"
   read operazione
 
-  # Calcolo
   case $operazione in
     +) risultato=$(echo "$numero1 + $numero2" | bc) ;;
     -) risultato=$(echo "$numero1 - $numero2" | bc) ;;
@@ -37,7 +34,6 @@ function operazioni_base() {
   echo "Risultato: $risultato"
 }
 
-# Funzione per risolvere equazioni di primo grado
 function equazione_primo_grado() {
   echo "Hai scelto: Risolvere equazioni di primo grado (forma: ax + b = 0)"
   echo "Inserisci il coefficiente 'a' (diverso da 0):"
@@ -50,12 +46,10 @@ function equazione_primo_grado() {
     return
   fi
 
-  # Risoluzione dell'equazione
   risultato=$(echo "scale=2; -$b / $a" | bc)
   echo "La soluzione dell'equazione $a*x + $b = 0 è: x = $risultato"
 }
 
-# Ciclo principale
 while true; do
   menu_principale
   case $scelta in

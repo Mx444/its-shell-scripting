@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Chiedere il nome del file
 echo "Inserisci il nome del file da monitorare:"
 read file_name
 

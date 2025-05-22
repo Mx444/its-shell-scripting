@@ -1,42 +1,79 @@
-# Steve Jobs Academy SH Course Exercises
+# Shell Scripting Exercises - ITS Steve Jobs Academy
 
-Benvenuto al repository degli esercizi del corso di SH della Steve Jobs Academy! 🚀
+This repository contains a collection of shell scripting exercises developed during the course at the Steve Jobs Academy. The exercises cover various aspects of shell scripting, from basics to more advanced concepts.
 
-## Descrizione
+## Repository Structure
 
-Questo repository contiene tutti gli esercizi assegnati durante il corso di SH. Ogni esercizio è progettato per aiutarti a migliorare le tue competenze nella shell scripting e nell'automazione delle attività.
+The repository is organized into thematic folders:
 
-## Struttura del Repository
+- **calculator/**: Calculation exercises
+  - Equation solving
+  - Calculation scripts
 
-- `esercizio1/` 📁
-    - Descrizione dell'esercizio 1
-    - Soluzione dell'esercizio 1
-- `esercizio2/` 📁
-    - Descrizione dell'esercizio 2
-    - Soluzione dell'esercizio 2
-- `esercizio3/` 📁
-    - Descrizione dell'esercizio 3
-    - Soluzione dell'esercizio 3
+- **files/**: File manipulation
+  - Array operations
+  - Backup utilities
+  - File comparison
+  - File conversion
+  - Report generation
+  - File monitoring
+  - Occurrence counting
+  - File permission management
+  - File sorting
+  - Book library management
 
-## Come Usare Questo Repository
+- **loop/**: Loop examples
+  - Infinite loops
 
-1. Clona il repository sul tuo computer:
-     ```sh
-     git clone https://github.com/tuo-username/steve-jobs-accademy-sh.git
-     ```
-2. Naviga nella cartella dell'esercizio che vuoi eseguire:
-     ```sh
-     cd steve-jobs-accademy-sh/esercizio1
-     ```
-3. Leggi la descrizione dell'esercizio e prova a risolverlo da solo.
-4. Confronta la tua soluzione con quella fornita nel repository.
+## How to Use the Exercises
 
-## Contributi
+Each file contains a complete shell script that can be executed separately. To run an exercise, use the command:
 
-Se vuoi contribuire a questo progetto, sentiti libero di fare una fork del repository e inviare una pull request. Ogni contributo è benvenuto! 🌟
+```bash
+bash path/to/script.sh
+```
 
-## Licenza
+Or make the script executable and then run it:
 
-Questo progetto è sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
+```bash
+chmod +x path/to/script.sh
+./path/to/script.sh
+```
 
-Buon coding! 💻
+## Exercise Examples
+
+### File Manipulation
+```bash
+# Counting occurrences in a file
+# Monitoring file changes
+# Converting file formats
+```
+
+### Calculation Operations
+```bash
+# Solving equations
+# Basic mathematical calculations
+```
+
+### Loops and Flow Control
+```bash
+# Infinite loops
+# Iterating through arrays
+```
+
+## Educational Objectives
+
+These exercises were designed to:
+- Understand the fundamental concepts of shell scripting
+- Develop problem-solving skills
+- Apply common commands in practical contexts
+- Improve the ability to write clean and well-structured shell scripts
+
+## Requirements
+
+- Unix/Linux environment or Windows with WSL
+- Basic knowledge of shell syntax
+
+---
+
+*This repository was created as part of the educational journey at ITS Steve Jobs Academy.*
